@@ -1,0 +1,41 @@
+.wrapper {
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: black solid 1px;
+}
+
+#letter {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    display: flex;
+    justify-self: center;
+}
+
+h1 {
+    display: flex;
+    justify-self: center;
+    font-size: 48px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    color: #006EB6;
+    border-bottom: lightgray 2px solid;
+    padding-bottom: 10px;
+}
+
+#statement {
+    font-style: italic;
+}
+
+li{
+    padding-bottom: 25px;
+}
