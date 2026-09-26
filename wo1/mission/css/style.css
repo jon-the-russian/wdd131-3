@@ -6,6 +6,8 @@
     padding-top: 25px;
     padding-bottom: 25px;
     border: black solid 1px;
+    margin: 0 auto;
+    width: 400px;
 }
 
 #letter {
