@@ -1,4 +1,130 @@
 body {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
 }
 
+header {
+    padding: 10px 4px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid #e9a66d
+}
+
+header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #392238;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2px 0 18px;
+}
+
+nav {
+    border-top: 1px solid #e9a66d;
+    border-bottom: 1px solid #e9a66d;
+    display: flex;
+    justify-content: flex-end;
+    gap: 38px;
+    padding: 14px 34px;
+}
+
+nav a {
+    color: #b00020;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+main {
+    border-bottom: 1px solid #e9a66d;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+    border-top: 2px solid #e9a66d;
+}
+
+
+.written, .age, .genre, .stars {
+    text-align: right;
+    margin: 0 auto;
+    grid-column: 4/5;
+}
+
+.written {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.age {
+    margin-top: 12px;
+}
+
+.genre {
+    margin-top: 12px;
+}
+
+.stars {
+    margin-top: 12px;
+}
+
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #b00020;
+    margin: 0 auto;
+    grid-column: 1/4;
+}
+
+
+img {
+    display: block;
+    width: 128px;
+    height: auto;
+    margin-left: 10px;
+    grid-column: 2/3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.review {
+    margin: 0 auto;
+    grid-column: 1/4;
+    padding-bottom: 15px;
+}
+
+footer {
+    border-top: 1px solid #e9a66d;
+    display: flex;
+    
+}
+
+footer p {
+    margin: 0 auto;
+    justify-self: center;
+    padding-top: 15px;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        border-top: none;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .written, .age, .genre, .stars {
+        grid-column: 2/3;
+    }
+
+    h3 {
+        grid-column: 2/5;
+        padding-left: 30px;
+    }
+
+    img {
+        grid-column: 4/5;
+    }
+
+    .review {
+        grid-column: 3/5;
+    }
+}
