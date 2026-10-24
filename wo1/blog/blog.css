@@ -36,13 +36,18 @@ nav a {
 }
 
 main {
-    border-bottom: 1px solid #e9a66d;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     margin-top: 40px;
-    border-top: 2px solid #e9a66d;
 }
 
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 2px solid #e9a66d;
+    border-bottom: 1px solid #e9a66d;
+    padding: 20px 0;
+}
 
 .written, .age, .genre, .stars {
     text-align: right;
@@ -106,27 +111,34 @@ footer p {
 }
 
 @media screen and (min-width: 700px) {
-    main {
+    article {
         border-top: none;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
+        border-bottom: none;
+        padding: 30px;
+        margin: 5px
     }
 
     .written, .age, .genre, .stars {
-        grid-column: 2/3;
+        grid-column: 1;
+        padding-right: 30px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    h3 {
-        grid-column: 2/5;
-        padding-left: 30px;
+    .book-stuff {
+        grid-column: 2;
+        border-left: 1px solid #e9a66d;
+        padding: 30px;
     }
 
-    img {
-        grid-column: 4/5;
+    .book-stuff h3 {
+        margin: 0;
+        padding: 0;
     }
-
-    .review {
-        grid-column: 3/5;
-    }
-
     
+    .book-stuff img {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
