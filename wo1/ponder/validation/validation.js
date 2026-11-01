@@ -52,13 +52,16 @@ form.addEventListener("submit", function (event) {
   }
    
   // Let the user know if they choose many campuses but didn't put a note that they need to add a note
-  if(type === "many" && selectedCampuses.length <2) {
+  if(type === "many" && selectedCampuses.length < 2) {
     output.textContent = "My guy are ya retarded. If you want many select many. Man this is why I wish they still put down Down Syndrome kids.";
     return;
   }
 
   //Let the user know if they choose many campus but only had one campus selected that they need to choose at least two campuses
-  
+  if(type === "one" && selectedCampuses.length > 1) {
+    output.textContent = "Alright let me walk you through this 1 = 1, not 2 or more. Please select more or go back to kindergarten.";
+    return;
+  }
 
   if (isPastDate(availableDate)) {
     output.textContent = "Please choose a later date.";
