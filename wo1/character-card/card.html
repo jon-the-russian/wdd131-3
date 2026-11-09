@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Card</title>
+    <link rel="stylesheet" href="card.css">
+    <script src="card.js" defer></script>
+</head>
+<body>
+    <div class="card">
+        <img id="characterImg" src="image/snortleblat.webp" alt="Snortlblat Lizard Man">
+        <div id="nameplate">
+            <h3 id="characterName">Snortlblat Lizard Man</h3>
+        </div>
+        <div id="stats">
+            <p id="characterClass">Class: Swamp Puppy Organizer</p>
+            <p id="characterLevel">Level: 1</p>
+            <p id="characterHealth">Health: 100</p>
+        </div>
+
+        <div id="buttons">
+            <button onclick="character.attacked()">Attack</button>
+            <button onclick="character.levelUp()">Level Up</button>
+        </div>
+    </div>
+</body>
+</html>
