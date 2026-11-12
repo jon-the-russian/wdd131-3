@@ -1,0 +1,56 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 1em;
+    background-color: #A8C609;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 15px;
+}
+
+p {
+    color: #CFFF04;
+}
+
+a {
+    text-decoration: none;
+    color: #4A412A;
+}
+
+hr{
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 600px) {
+
+    .media-card {
+        display: flex;
+        gap: 15px;
+        align-items: start;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%
+    }
+
+    .gallery .media-card {
+        width: 45%;
+    }
+}
